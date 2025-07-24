@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.calendar {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 360px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weekdays, .days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-top: 10px;
+}
+
+.weekdays div, .days div {
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.days div {
+  border: 1px solid #ddd;
+  height: 60px;
+  line-height: 60px;
+  cursor: pointer;
+}
+
+.today {
+  background-color: #2e86de;
+  color: #fff;
+  border-radius: 50%;
+}
